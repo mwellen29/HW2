@@ -1,0 +1,107 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 20px;
+    background-color: #ffffff;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2.2rem;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+#controls-container {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 20px;
+    font-family: Arial, sans-serif;
+}
+
+#controls-container select, 
+#controls-container button {
+    padding: 6px 12px;
+    font-size: 0.9rem;
+    border-radius: 4px;
+    border: 1px solid #a6a6a6;
+    cursor: pointer;
+    background-color: #f9f9f9;
+}
+
+#controls-container button:hover {
+    background-color: #e0e0e0;
+}
+
+#game-board {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.letter-row {
+    display: flex;
+}
+
+.letter-box {
+    border: 2px solid #878a8c;
+    border-radius: 2px;
+    margin: 3px;
+    font-size: 2rem;
+    font-weight: bold;
+    height: 52px;
+    width: 52px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    background-color: #ffffff;
+    box-sizing: border-box;
+}
+
+.filled-box {
+    border: 2px solid #000000;
+}
+
+#keyboard-cont {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#keyboard-cont div {
+    display: flex;
+}
+
+.first-row, .second-row, .third-row {
+    margin: 3px 0;
+}
+
+.keyboard-button {
+    font-family: inherit;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 12px 10px;
+    margin: 0 3px;
+    cursor: pointer;
+    text-transform: uppercase;
+    background-color: #f0f0f0;
+    border: 1px solid #a6a6a6;
+    border-radius: 4px;
+    min-width: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.keyboard-button:first-child,
+.keyboard-button:last-child {
+    padding-left: 14px;
+    padding-right: 14px;
+}
